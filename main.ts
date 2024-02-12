@@ -24,8 +24,6 @@ radio.onReceivedValue(function (name, value) {
         enemy.change(LedSpriteProperty.X, value)
     } else if (name == "spawn") {
         enemy_bullet = game.createSprite(enemy.get(LedSpriteProperty.X), enemy.get(LedSpriteProperty.Y))
-    } else if (name == "move") {
-        enemy_bullet.change(LedSpriteProperty.Y, value)
     }
 })
 let enemy_bullet: game.LedSprite = null
